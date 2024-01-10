@@ -1,6 +1,6 @@
 module.exports = {
 	title: "sansu-blog",
-	dest: './dist'，   // 设置打包输出目录
+	dest: './dist',   // 设置打包输出目录
 	description: "Just playing around",
 	base: "/blog/", //https://github.com/syc-xiaosu03
 	description: "技术博客",
