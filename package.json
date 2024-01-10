@@ -1,0 +1,19 @@
+{
+	"name": "vuepress-blog",
+	"version": "1.0.0",
+	"description": "技术博客",
+	"main": "index.js",
+	"repository": "https://github.com/syc-xiaosu03",
+	"author": "sansu",
+	"license": "8088",
+	"scripts": {
+		"dev": "vuepress dev docs --temp .temp",
+		"docs:dev": "vuepress dev docs",
+		"docs:build": "vuepress build docs",
+		"deploy": "bash deploy.sh"
+	},
+	"devDependencies": {
+		"core-js": "^3.35.0",
+		"vuepress": "^1.9.10"
+	}
+}
