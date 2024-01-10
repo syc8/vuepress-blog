@@ -4,7 +4,8 @@ home: true
 heroText: sansu
 tagline: 技术博客
 actionText: GO →
-actionLink: /interview/a/
+actionLink: /interview/2020面试题1/
+sidebarDepth: 2
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
