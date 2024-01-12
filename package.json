@@ -10,7 +10,8 @@
 		"dev": "vuepress dev docs --temp .temp",
 		"docs:dev": "vuepress dev docs",
 		"docs:build": "vuepress build docs",
-		"deploy": "bash deploy.sh"
+		"deploy": "bash deploy.sh",
+		"push": "bash push.sh"
 	},
 	"devDependencies": {
 		"core-js": "^3.35.0",

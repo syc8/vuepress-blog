@@ -1,3 +1,4 @@
+const sideBarConf = require('./sidebar')
 module.exports = {
 	title: "sansu-blog",
 	// 以下两项base&dest, 只在部署时开启设置, 开发时需注释掉(为默认值不设定!!!)
@@ -16,6 +17,7 @@ module.exports = {
 	],
 	themeConfig: {
 		displayAllHeaders: true, // 默认值：false
+		// 导航配置
 		nav: [
 			{ text: "首页", link: "/" },
 			{
@@ -30,32 +32,11 @@ module.exports = {
 					{ text: "2023弱点复习", link: "/interview/2023弱点复习/" },
 				],
 			},
-			{ text: "文档", link: "/document/index" },
+			{ text: "文档", link: "/document/index/" },
+			{ text: "react", link: "/react/" },
 			{ text: "github", link: "https://github.com/syc-xiaosu03", target: "_self" },
 		],
 		// 侧边栏配置
-		sidebar: {
-			// '/': '',
-			"/interview/": [
-				{
-					title: "面试题之",
-					children: [
-						// "/interview/test",
-						"/interview/2020面试题1",
-						"/interview/2020面试题2",
-						"/interview/覆盘",
-						"/interview/性能优化",
-						"/interview/2023弱点复习",
-					],
-				},
-			],
-			"/": [
-				"" /* / */,
-				// 'contact', /* /contact.html */
-				// 'about'    /* /about.html */
-			],
-		},
-		sidebar: auto,
-		// sidebarDepth: 2,
+		...sideBarConf
 	},
 };
