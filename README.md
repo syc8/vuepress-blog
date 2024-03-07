@@ -75,8 +75,8 @@ dist包: 根路径为assets, 引入时为: /img/同markdown文件名/(***.png)
 ##### typora编辑粘贴图片(路径不对)
 - 存放位置有误, 需手动修改
 - 引入路径正确, 不用修改
-> 目前typora路径设置有不足, 需编辑完笔记后手动
-> 若将根路径为/docs/.vuepress/pulbic/, 引入路径上会携带, 故无法使用, 需手动移动到/docs/.vuepress/pulbic/下
+> 目前typora路径设置有不足, 需编辑完笔记后手动移过去
+> 若将根路径为/docs/.vuepress/pulbic/, 引入路径上会携带, 故无法使用, 需手动复制到/docs/.vuepress/pulbic/下
 
 **平时用可以在typora上编辑, 结束后, 手动移动图片, 再启动vuepress-blog查看图片访问是否成功;**
 

@@ -33,7 +33,14 @@ module.exports = {
 				],
 			},
 			{ text: "文档", link: "/document/index/" },
-			{ text: "react", link: "/react/" },
+			{ 
+				text: "react", 
+				ariaLabel: "Language Menu",
+				items: [
+					{ text: "R", link: "/react/R/" },
+					{ text: 'React+nextjs访问星', link: "/react/React+nextjs访问星/"}
+				]
+			},
 			{ text: "github", link: "https://github.com/syc-xiaosu03", target: "_self" },
 		],
 		// 侧边栏配置
