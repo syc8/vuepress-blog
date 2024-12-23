@@ -30,10 +30,12 @@ yarn docs:build
 
 ## 提交(本工程)
 yarn push 或 yarn push "message"
+
 注：(在gitbash可执行，具体执行脚本在push.sh中)
 
 ## 发布&提交(静态网站)
 yarn deploy
+
 注：(在gitbash可执行，指执行下方deploy.sh中的脚本)
 
 
