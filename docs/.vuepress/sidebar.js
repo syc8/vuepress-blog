@@ -12,7 +12,7 @@ module.exports = {
     //                     "/interview/2020面试题2",
     //                     "/interview/覆盘",
     //                     "/interview/性能优化",
-    //                     "/interview/2023弱点复习",
+    //                     "/interview/2023专项复习",
     //                 ],
     //             },
     //         ],

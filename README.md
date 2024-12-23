@@ -31,40 +31,61 @@ yarn docs:build
 ## 提交(本工程)
 yarn push 或 yarn push "message"
 
-注：(在gitbash可执行，具体执行脚本在push.sh中)
+注：在本工程根目录，通过gitbash面板执行(具体执行脚本在push.sh中)
 
 ## 发布&提交(静态网站)
 yarn deploy
 
-注：(在gitbash可执行，指执行下方deploy.sh中的脚本)
+注：在本工程根目录，通过gitbash面板执行(指执行下方deploy.sh中的脚本)
 
 
+## 编辑
+#### 如在typora上编辑（推荐）
+编辑前注意：修改图片路径为"img/同markdown文件名/**"，方可在typora上正常显示；
 
+编辑结束后
+1. 必须更改图片路径为"/img/同markdown文件名/**"
+2. 同步当前文件的的图片到/public/img/对应文件中
+3. 然后保存、发布。
 
+#### 如在vscode上编辑并启动预览，
+编辑前：图片路径为"/img/同markdown文件名/**"，方可保证预览及发布后能正常显示；
+
+编辑结束后
+1. 最好将public/img/有更改的图片，同步回/intrview(指对应笔记所在文件夹)/img/对应文件中
+2. 然后保存、发布。
 
 
 ## 搭建问题
 
 #### 图片路径
-开发源码:  根路径为/docs/.vuepress/pulbic/,  引入时书写为: /img/同markdown文件名/(***.png)
-dist包: 根路径为assets, 引入时为: /img/同markdown文件名/(***.png)
+##### 引入时正确的书写为:  "/img/同markdown文件名/(***.png)"
+- 开发源码:  根路径为/docs/.vuepress/pulbic/,  
+- dist包: 根路径为assets, 引入时为: /img/同markdown文件名/(***.png)
 > **!!!注意**: 开发的路径以上面规则正确放置并书写引入路径, 打包后会自动输出到对应assets文件中并引入
 
 ##### typora编辑粘贴图片(路径不对)
+直接粘贴路径为："img/同markdown文件名/**"
+
 - 存放位置有误, 需手动修改
-- 引入路径正确, 不用修改
+- 引入路径不对，与静态网站可显示的路径不同，img前面少了一个斜杠
+
 > 目前typora路径设置有不足, 需编辑完笔记后手动移过去
 > 若将根路径为/docs/.vuepress/pulbic/, 引入路径上会携带, 故无法使用, 需手动复制到/docs/.vuepress/pulbic/下
 
-**平时用可以在typora上编辑, 结束后, 手动移动图片, 再启动vuepress-blog查看图片访问是否成功;**
+**平时用可以在typora上编辑, 结束后, 手动复制图片到public/img/对应文件下, 再启动vuepress-blog查看图片访问是否成功;**
 
 
 
 
 ##### vscode编辑粘贴(路径正确)
+
+ctrl + shift + p  选择 paste Image 进行粘贴图片
+
+直接粘贴路径为："/img/同markdown文件名/**"
 路径可参数上面解释正常使用, 没问题
 - 存放位置正确, 不用手动修改
-- 引入路径正确, 不用手动修改
+- 引入路径正确, 但与typora的引入路径不同，img前面多了一介斜杠
 
 
 ##### build时报错, dev启动没问题
