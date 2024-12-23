@@ -1,17 +1,21 @@
+#!/usr/bin/env sh
+git 提交
+git add .
 if [ x$1 != x ];
 then
     #...有参数
-    git 提交
-    git add .
     git commit -m $1
-    git pull
-    git push
-    echo 'Success: 一键提交成功!';
 else
     #...没有参数
-    echo 'Error: 请输入commit信息!';
+    # 提交变更，包括当前日期
+    current_date=$(date +%Y%m%d)
+    git commit -m "updated${current_date}_xk"
+    echo "提交信息为当前日期: updated${current_date}_xk";
 fi
 
+git pull
+git push
+echo 'Success: 一键提交成功!';
 
 
 

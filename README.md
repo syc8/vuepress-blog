@@ -31,9 +31,9 @@ yarn docs:dev # npm run docs:dev
 yarn docs:build
 
 
-## 发布
-yarn deploy      (在gitbash可执行)
-#### deploy.sh 自动发布脚本
+## 一、发布并提交静态网站
+yarn deploy      (指执行下方deploy.sh中的脚本, 在gitbash可执行)
+#### deploy.sh 自动发布并提交静态网站的脚本
 **注意: ** 如果发布执行不成功, 检查下面的脚本(命令、路径、地址、分支等)
 
 0: 保脚本抛出遇到的错误
@@ -63,8 +63,11 @@ git branch -M main
 > git push -f git@github.com:syc8/syc8.github.io.git main
 
 
+## 二、本构建工程代码需另外进行提交: 
+yarn push 
+或 yarn push "message"
 
-
+(具体执行脚本在push.sh中)
 ## 搭建问题
 
 #### 图片路径
