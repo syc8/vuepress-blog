@@ -8,9 +8,9 @@ then
 else
     #...没有参数
     # 提交变更，包括当前日期
-    current_date=$(date +%Y-%m-%d %H:%M:%S)
-    git commit -m "updated${current_date}"
-    echo "提交信息为当前日期: updated${current_date}";
+    current_date=$(date +%Y%m%d%H%M%S)
+    git commit -m "updated${current_date}_"
+    echo "提交信息为当前日期: updated${current_date}_";
 fi
 
 git pull
