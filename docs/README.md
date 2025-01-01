@@ -4,7 +4,7 @@ home: true
 heroText: sansu
 tagline: 技术博客
 actionText: GO →
-actionLink: /interview/2020面试题1/
+actionLink: /interview/2023专项复习/
 sidebarDepth: 2
 features:
 - title: 简洁至上

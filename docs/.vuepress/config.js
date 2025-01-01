@@ -28,11 +28,22 @@ module.exports = {
 					{ text: "2023专项复习", link: "/interview/2023专项复习/" },
 					{ text: "手写题", link: "/interview/手写题/" },
 					{ text: "输出打印题", link: "/interview/输出打印题/" },
+					{ text: "虚拟列表", link: "/interview/虚拟列表/" },
 					{ text: "2020面试题1", link: "/interview/2020面试题1/" },
 					{ text: "2020面试题2", link: "/interview/2020面试题2/" },
 					{ text: "覆盘", link: "/interview/覆盘/" },
 					{ text: "性能优化", link: "/interview/性能优化/" },
 				],
+			},
+			{
+				text: "微信小程序", 
+				ariaLabel: "Language Menu",
+				items: [
+					{ text: "小程序", link: "/wechatmini/小程序" },
+					{ text: '01小程序技术选型', link: "/wechatmini/01小程序_技术选型"},
+					{ text: "02原生微信小程序实践", link: "/wechatmini/02微信小程序-系统实践学习" },
+					{ text: 'WePY快速开发', link: "/wechatmini/WePY - 快速开发小程序"},
+				]
 			},
 			{ text: "文档", link: "/document/index/" },
 			{ 
